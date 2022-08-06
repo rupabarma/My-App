@@ -39,7 +39,7 @@ return (
 			All
 		</NavLink>
 		<NavLink to='/skin_care' activeStyle>
-      Skin Care
+      Skin
 		</NavLink>
 		{/* <NavLink to='/hair_care' activeStyle>
       Hair care
