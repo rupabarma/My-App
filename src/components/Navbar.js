@@ -17,7 +17,7 @@ import {
 //   return (
 //     <>
 //     <nav className="navbar">
-      <img src={logo} alt="error" className="logo-1" />
+    //   <img src={logo} alt="error" className="logo-1" />
 //       <nav  className="all buttons"> All</nav>
 //       <nav  className="skin_care buttons">Skin Care</nav>
 //       <nav  className="hair_care buttons" >Hair care</nav>
@@ -35,19 +35,20 @@ return (
 		<Bars />
 
 		<NavMenu>
-		<NavLink to='/All' activeStyle>
+    <img src={logo} alt="error" className="logo-1" />
+		<NavLink to='/All'  activestyle>
 			All
 		</NavLink>
-		<NavLink to='/skin_care' activeStyle>
-      Skin
+		<NavLink to='/skin_care' activestyle>
+      		Skin Care
 		</NavLink>
-		{/* <NavLink to='/hair_care' activeStyle>
+		<NavLink to='/hair_care' activeStyle>
       Hair care
 		</NavLink>
 		<NavLink to='/Makeover' activeStyle>
       Makeover
-		</NavLink>
-		<NavLink to='/Offers' activeStyle>
+		 </NavLink>
+		{/* <NavLink to='/Offers' activeStyle>
       Offers
 		</NavLink> */}
 		{/* <NavLink to='/sign-up' activeStyle>

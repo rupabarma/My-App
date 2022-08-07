@@ -6,26 +6,29 @@ import styled from 'styled-components';
 
 
 export const Nav = styled.nav`
-            background: #63D471;
-            height: 85px;
+            width: 100vw;
+            height: 63px;
+            background-color: #f5a8c8;
             display: flex;
-            justify-content: space-between;
-            padding: 0.2rem calc((100vw - 1000px) / 2);
-            z-index: 12;
+            align-items: flex-end;
             /* Third Nav */
             /* justify-content: flex-start; */
             `;
 
 export const NavLink = styled(Link)`
-            color: #808080;
+            color: rgb(23, 24, 26);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             display: flex;
-            align-items: center;
+            font-size: large;
+            font-weight: 400;
+            ${'' /* align-items: center; */}
             text-decoration: none;
             padding: 0 1rem;
+            margin: 0 10px;
             height: 100%;
             cursor: pointer;
             &.active {
-                color: #000000;
+                text-decoration: underline 2px;
         }
             `;
 

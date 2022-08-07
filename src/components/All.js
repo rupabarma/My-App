@@ -1,15 +1,15 @@
 import React from 'react'
-import sc1 from './sc1.jpg';
+// import sc1 from './sc1.jpg';
 import logo from './logo.png';
+import homePageImage from './homePageImage.jpg';
 
 function All() {
     return (
         <>
         <div>
-            <img src={sc1} alt="error" className="skincare-1" />
+            <img src={homePageImage} alt="error" className="skincare-1" />
             <img src={logo} alt="error" className="logo2"/>
         </div>
-        <hr />
         <div className="all_products">
             <div className="all_product"><img src="https://m.media-amazon.com/images/I/511eTwBa7DS._SL1200_.jpg" alt="error"
                     className="all_product_images" />
@@ -177,6 +177,15 @@ function All() {
                 <h3>Olay Day Cream Regenerist Microsculpting Moisturizer (NON SPF) for All Skin types 50g</h3> 
                 <b>₹1,274.00</b>
                 <h5>Olay</h5>
+            </div>    
+            <div className="all_product"><img className='all_product_images' src='https://cdn.shopify.com/s/files/1/1712/3327/products/Mitchell_Website_IngredientsPanel-23_600x.jpg?v=1644852060' alt='error'/>
+                <h3>Best Anti Aging Skin Care Products for 50s - Be Ageless Skin Kit (Age 51 & Above)</h3><b>₹ 2,699.00</b><h5>Mitchellusa</h5>
+            </div>
+            <div className="all_product"><img className='all_product_images' src='https://cdn.shopify.com/s/files/1/0552/2649/9256/products/1_796ec32e-cd2f-45bb-9eb3-fba66066d4ff_720x.jpg?v=1638265871' alt='error'/>
+                <h3>Complete Skin Glow Kit (5 Products) - Monthly Pack</h3><b> Rs. 2,620.00</b><h5>THE KAILON</h5>
+            </div>    
+            <div className="all_product"><img className='all_product_images' src='https://images.forestessentialsindia.com/pub/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/d/a/day_to_night_skincare_ritual_for_teenage_skin.png'  alt='error'/>
+                <h3>Day to Night Skincare Ritual for Teenage Skin</h3><b>₹5,925.00</b><h5>Forest Essentials</h5>
             </div>
         </div>
         </>    

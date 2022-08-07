@@ -1,6 +1,6 @@
 import React from 'react'
 
-function skin_care() {
+function SkinCare() {
   return (
     <>
       <div className='skin_care_products'>
@@ -48,4 +48,4 @@ function skin_care() {
   )
 }
 
-export default skin_care
+export default SkinCare
