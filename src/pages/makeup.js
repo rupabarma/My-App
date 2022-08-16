@@ -1,11 +1,11 @@
 import React from 'react'
 
-function HairCare() {
+function Makeup() {
   return (
     <div>
-      
+      <h1>Makeup</h1>
     </div>
   )
 }
 
-export default HairCare;
+export default Makeup;

@@ -21,10 +21,10 @@ export const NavLink = styled(Link)`
             display: flex;
             font-size: large;
             font-weight: 400;
-            ${'' /* align-items: center; */}
+            align-items: center;
             text-decoration: none;
             padding: 0 1rem;
-            margin: 0 10px;
+            margin: 2px 10px;
             height: 100%;
             cursor: pointer;
             &.active {
@@ -34,7 +34,7 @@ export const NavLink = styled(Link)`
 
 export const Bars = styled(FaBars)`
             display: none;
-            color: #808080;
+            color: black;
             @media screen and (max-width: 768px) {
                 display: block;
             position: absolute;
@@ -50,13 +50,13 @@ export const NavMenu = styled.div`
             display: flex;
             align-items: center;
             margin-right: -24px;
-            /* Second Nav */
-            /* margin-right: 24px; */
-            /* Third Nav */
-            /* width: 100vw;
-            white-space: nowrap; */
+            ${'' /* Second Nav  */}
+            ${'' /* margin-right: 24px;  */}
+            ${'' /* Third Nav  */}
+            ${'' /* width: 100vw; */}
+            white-space: nowrap;
             @media screen and (max-width: 768px) {
-                display: none;
+                ${'' /* display: none; */}
         }
             `;
 
@@ -90,4 +90,4 @@ export const NavBtnLink = styled(Link)`
             color: #808080;
         }
             `;
-        // export default index
+//         export default index;

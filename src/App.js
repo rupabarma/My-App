@@ -2,11 +2,11 @@
 import './App.css';
 import React from 'react';
 import Navbar from './components/Navbar';
-import All from './components/All';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import SkinCare from './components/skin_care';
-import HairCare from './components/hair_care';
-import Makeup from './components/makeup';
+import All from './pages';
+import { BrowserRouter as Router,Switch, Route } from 'react-router-dom';
+import SkinCare from './pages/skin_care';
+import HairCare from './pages/hair_care';
+import Makeup from './pages/makeup';
 
 
 // function App() {
@@ -23,17 +23,17 @@ function App() {
     
     <Router>
       <Navbar />
-      <Routes>
-        <Route  path='/All' exact component={All} />
-        <Route path='/skin_care' component={SkinCare}/>
-        <Route path='/hair_care' component={HairCare} />
-        <Route path='/makeup' component={Makeup} />
+      <Switch>
+        <Route  path='/'  exact component={All} />
+        <Route path='/skin_care'  component={SkinCare}/>
+        <Route path='/hair_care'  component={HairCare} />
+        <Route path='/makeup'  component={Makeup} />
         {/* <Route path='/team' component={Teams} /> */}
         {/* <Route path='/blogs' component={Blogs} />
         <Route path='/sign-up' component={SignUp} /> */}
-      </Routes>
+      </Switch>
     </Router>
-    <All/>
+    
     </>
   );
 }

@@ -1,7 +1,6 @@
 // import { click } from '@testing-library/user-event/dist/click';
 import logo from './logo.png';
 
-
 import {
   Nav,
   NavLink,
@@ -32,21 +31,22 @@ const Navbar = () => {
 return (
 	<>
 	<Nav>
+	<img src={logo} alt="error" className="logo-1" />
 		<Bars />
 
 		<NavMenu>
-    <img src={logo} alt="error" className="logo-1" />
-		<NavLink to='/All'  activestyle>
+    
+		<NavLink to='/All'  activestyle >
 			All
 		</NavLink>
-		<NavLink to='/skin_care' activestyle>
+		<NavLink to='/skin_care'  activestyle >
       		Skin Care
 		</NavLink>
-		<NavLink to='/hair_care' activeStyle>
-      Hair care
+		<NavLink to='/hair_care'  activestyle>
+      		Hair care
 		</NavLink>
-		<NavLink to='/Makeover' activeStyle>
-      Makeover
+		<NavLink to='/makeup' activestyle>
+      		Makeover
 		 </NavLink>
 		{/* <NavLink to='/Offers' activeStyle>
       Offers
@@ -61,6 +61,9 @@ return (
 		<NavBtnLink to='/signin'>Sign In</NavBtnLink>
 		</NavBtn> */}
 	</Nav>
+	<Bars>
+		
+	</Bars>
 	</>
 );
 };
